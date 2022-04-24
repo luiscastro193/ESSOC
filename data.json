@@ -1,0 +1,69 @@
+{
+	"estimadores": {
+		"Muestras transversales": {
+			"trans_orig": "Transversal variables originales",
+			"trans_dic": "Transversal variables dicotomizadas"
+		},
+		"Muestras longitudinales": {
+			"long_dif": "Longitudinal diferencia"
+		}
+	},
+	"segmentaciones": {
+		"edad": "Sexo y Edad",
+		"urb": "Sexo y Urbanización"
+	},
+	"bloques": {
+		"Bloque 1": ["V1", "V2"],
+		"Bloque 2": ["V3", "V4"]
+	},
+	"variables": {
+		"V1": {
+			"nombre": "Variable 1",
+			"archivos": {
+				"trans_orig": {
+					"edad": ["trans/ejemplo1", "trans/ejemplo2"],
+					"urb": ["trans/ejemplo1"]
+				},
+				"long_dif": {
+					"edad": ["long/ejemplo1"]
+				}
+			}
+		},
+		"V2": {
+			"nombre": "Variable 2",
+			"archivos": {
+				"trans_orig": {
+					"edad": ["trans/ejemplo1", "trans/ejemplo2"],
+					"urb": ["trans/ejemplo1"]
+				},
+				"long_dif": {
+					"edad": ["long/ejemplo1"]
+				}
+			}
+		},
+		"V3": {
+			"nombre": "Variable 3",
+			"archivos": {
+				"trans_orig": {
+					"edad": ["trans/ejemplo1", "trans/ejemplo2"],
+					"urb": ["trans/ejemplo1"]
+				},
+				"long_dif": {
+					"edad": ["long/ejemplo1"]
+				}
+			}
+		},
+		"V4": {
+			"nombre": "Variable 4",
+			"archivos": {
+				"trans_orig": {
+					"edad": ["trans/ejemplo1", "trans/ejemplo2"],
+					"urb": ["trans/ejemplo1"]
+				},
+				"long_dif": {
+					"edad": ["long/ejemplo1"]
+				}
+			}
+		}
+	}
+}

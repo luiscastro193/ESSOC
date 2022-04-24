@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>ESSOC</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="icon" href="favicon.jpg">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<script src="build.js" defer></script>
+	<link rel="preload" href="data.json" as="fetch" crossorigin>
+	<script src="https://cdn.jsdelivr.net/npm/vega/build/vega.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-lite/build/vega-lite.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-embed/build/vega-embed.min.js" data-id="vegaEmbed" defer></script>
+	<script src="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome/js/fontawesome.min.js" async></script>
+	<script src="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome/js/solid.min.js" async></script>
+</head>
+<body>
+	<header class="main-header main-selection-header">
+		<label for="main-info-checkbox"><h1>Encuesta Sanitaria y Social: resultados descriptivos <span><i class="fa-solid fa-circle-info"></i></span></h1></label>
+		<input id="main-info-checkbox" type="checkbox">
+		<p class="main-info">Esta aplicación web muestra los resultados descriptivos preliminares del estudio ESSOC realizado por la Escuela Andaluza de Salud Pública cuyo objetivo es determinar la magnitud, características y evolución del impacto de la COVID-19 en el estado de salud y sus determinantes sociales, ambientales y de comportamiento de la población andaluza mayor de 15 años (ref). Para obtener los resultados, seleccione una variable resultado de interés y seguidamente elija la forma en la que desea mostrar dichos resultados. Los datos se muestran desagregados por sexo, tanto numérica como gráficamente.</p>
+	</header>
+	<main class="selection-page">
+		<section class="selection-block">
+			<div class="selection-header">
+				<input id="var-info-checkbox" type="checkbox">
+				<label for="var-info-checkbox"><h3><span>Seleccione las variables</span><span><i class="fa-solid fa-circle-info"></i></span></h3></label>
+				<p class="selection-info">Las variables se presentan divididas en distintos bloques de información. Busque el bloque deseado haciendo scroll. Una vez dentro, puede seleccionar varias variables. El listado completo de variables puede verlo en ****** y los cuestionarios de cada medición en *******.</p>
+			</div>
+			<form id="var-selection" class="selection-form"></form>
+		</section>
+		<div class="right-side">
+			<section class="selection-block">
+				<div class="selection-header">
+					<input id="est-info-checkbox" type="checkbox">
+					<label for="est-info-checkbox"><h3><span>Seleccione los estimadores</span><span><i class="fa-solid fa-circle-info"></i></span></h3></label>
+					<p class="selection-info">Se pueden obtener resultados descriptivos de una medición concreta ('Transversal variables originales' o 'Transversal variables dicotomizadas'), de una medición con respecto a la primera ('Transversal cambio') o de una medición con respecto a la anterior ('Longitudinal diferencia').</p>
+				</div>
+				<form id="est-selection" class="selection-form"></form>
+			</section>
+			<section class="selection-block">
+				<div class="selection-header">
+					<input id="seg-info-checkbox" type="checkbox">
+					<label for="seg-info-checkbox"><h3><span>Seleccione las segmentaciones</span><span><i class="fa-solid fa-circle-info"></i></span></h3></label>
+					<p class="selection-info">Se presentan los resultados descriptivos totales y según sexo. Además, puede elegir una segunda variable de estratificación (grupos de edad, provincia o grado de urbanización).</p>
+				</div>
+				<form id="seg-selection" class="selection-form"></form>
+			</section>
+			<a class="distr-link" onclick="alert('Próximamente...')"><span>Ver distribución de las muestras teóricas y efectivas</span><span><i class="fa-solid fa-circle-info"></i></span></a>
+			<button class="main-button" disabled>Visualizar</button>
+		</div>
+	</main>
+</body>
+</html>
