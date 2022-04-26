@@ -283,6 +283,7 @@ input:checked + label > h3 {
 	padding: 0 17px 10px;
 	border-radius: 10px 0 0 10px;
 	position: relative;
+	align-items: center;
 }
 
 .downloads::after {
@@ -294,7 +295,6 @@ input:checked + label > h3 {
 }
 
 .downloads > span:first-child {
-	align-self: center;
 	color: white;
 	font-size: 19px;
 }
