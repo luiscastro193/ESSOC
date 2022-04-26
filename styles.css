@@ -280,7 +280,7 @@ input:checked + label > h3 {
 	font-size: 15px;
 	color: #C3E5FE;
 	font-weight: bold;
-	padding: 0 17px 15px;
+	padding: 0 17px 10px;
 	border-radius: 10px 0 0 10px;
 	position: relative;
 }
@@ -300,7 +300,7 @@ input:checked + label > h3 {
 }
 
 .downloads > *:not(:first-child) {
-	margin-top: 15px;
+	margin-top: 10px;
 }
 
 .results-page {
