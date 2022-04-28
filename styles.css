@@ -319,6 +319,7 @@ input:checked + label > h3 {
 	border: 1px solid #707070;
 	border-radius: 10px;
 	padding: 10px;
+	position: relative;
 }
 
 .est-title {
@@ -360,4 +361,22 @@ input:checked + label > h3 {
 	font-size: 15px;
 	font-weight: 600;
 	padding-left: 10px;
+}
+
+.var-title > a {
+	position: absolute;
+	right: -45px;
+	top: 0;
+	font-size: 22px;
+	color: #0000EE;
+	padding: 10px;
+}
+
+.index-link {
+	font-size: 20px;
+	padding: 0 10px;
+	font-weight: bold;
+	color: #0000EE;
+	text-decoration: underline;
+	margin-top: -5px;
 }
