@@ -11,6 +11,11 @@ label, a, button {
 	cursor: pointer;
 }
 
+a {
+	color: unset;
+	text-decoration: unset;
+}
+
 input[type=checkbox] {
 	display: none;
 }
@@ -34,7 +39,7 @@ input[type=checkbox] {
 	z-index: -100;
 }
 
-.main-header > label {
+.main-header > *:first-child {
 	display: flex;
 	max-width: 700px;
 	width: 100%;
@@ -197,7 +202,8 @@ input:checked + label > h3 {
 }
 
 .distr-link {
-	display: flex;
+	display: none;
+	/*display: flex;*/
 	width: 300px;
 	align-items: center;
 	justify-content: space-between;
@@ -260,6 +266,11 @@ input:checked + label > h3 {
 	grid-gap: 40px 30px;
 	margin-left: 30px;
 	padding-right: 15px;
+	align-items: flex-start;
+}
+
+.right-side > section:first-child {
+	grid-row: span 2;
 }
 
 .main-results-header {
