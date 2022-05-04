@@ -350,6 +350,11 @@ input:checked + label > h3 {
 	border-radius: 20px;
 }
 
+.est-title span {
+	float: right;
+	margin-left: 10px;
+}
+
 .chart-container {
 	max-width: 100%;
 	overflow: auto;
@@ -390,4 +395,8 @@ input:checked + label > h3 {
 	color: #0000EE;
 	text-decoration: underline;
 	margin-top: -5px;
+}
+
+.results-page > input:not(:checked) + p {
+	display: none;
 }

@@ -8,6 +8,11 @@
 			"long_dif": "Longitudinal diferencia"
 		}
 	},
+	"descripciones": {
+		"trans_orig": "Descripción del estimador Transversal variables originales...",
+		"trans_dic": "Descripción del estimador Transversal variables dicotomizadas...",
+		"long_dif": "Descripción del estimador Longitudinal diferencia..."
+	},
 	"segmentaciones": {
 		"edad": "Sexo y Edad",
 		"urb": "Sexo y Urbanización"
