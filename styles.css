@@ -355,6 +355,11 @@ input:checked + label > h3 {
 	margin-left: 10px;
 }
 
+.est-title > h2 {
+	font-size: inherit;
+	margin: 0;
+}
+
 .chart-container {
 	max-width: 100%;
 	overflow: auto;
