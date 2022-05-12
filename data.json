@@ -2,70 +2,56 @@
 	"estimadores": {
 		"Muestras transversales": {
 			"trans_orig": "Transversal variables originales",
-			"trans_dic": "Transversal variables dicotomizadas"
+			"trans_dic": "Transversal variables dicotomizadas",
+			"trans_camb": "Transversal cambio relativo",
+			"trans_bre": "Transversal brecha de género"
 		},
 		"Muestras longitudinales": {
-			"long_dif": "Longitudinal diferencia"
+			"long_dif": "Longitudinal diferencia",
+			"long_razon": "Longitudinal razón de empeoramiento",
+			"long_bre": "Longitudinal brecha de género"
 		}
 	},
 	"descripciones": {
-		"trans_orig": "Descripción del estimador Transversal variables originales...",
-		"trans_dic": "Descripción del estimador Transversal variables dicotomizadas...",
-		"long_dif": "Descripción del estimador Longitudinal diferencia..."
+		"trans_orig": "Para las categorías originales de la variable seleccionada, se obtienen los porcentajes, intervalos de confianza al 95%, tamaño de la muestra y estimaciones de la población en cada medición, agrupados por sexo y la variable de segmentación elegida.",
+		"trans_dic": "Evolución de los porcentajes e intervalos de confianza al 95%, agrupados por sexo y la variable de segmentación elegida, de las personas con la categoría de referencia de la variable dicotomizada seleccionada. Si los intervalos de confianza de una misma medición no se superponen, puede interpretarse que existen diferencias estadísticamente significativas entre las variables de segmentación correspondientes. Del mismo modo, si los intervalos de confianza de dos mediciones diferentes no se superponen, puede decirse que existen diferencias estadísticamente significativas entre las mismas.",
+		"trans_camb": "Evolución en cada medición respecto a la primera de los cambios relativos e intervalos de confianza al 95%, agrupados por sexo y la variable de segmentación elegida, de las personas con la categoría de referencia de la variable dicotomizada seleccionada. Un valor positivo indica un aumento, en términos porcentuales, de la categoría de referencia de la variable seleccionada en la medición correspondiente respecto a la primera. Por el contrario, un valor negativo indica su disminución. Si el intervalo de confianza no incluye el valor 0, puede interpretarse que este aumento o disminución es estadísticamente significativo. Del mismo modo, si los intervalos de confianza para la misma medición no se superponen, puede decirse que existen diferencias estadísticamente significativas entre las variables de segmentación en cuestión.",
+		"trans_bre": "Evolución en cada medición respecto a la primera de las brechas absolutas/relativas de género (mujeres frente a hombres) en el cambio absoluto/relativo e intervalos de confianza al 95%, agrupados por la variable de segmentación elegida y de las personas con la categoría de referencia de la variable dicotomizada seleccionada. Un valor positivo indica que las mujeres muestran, en puntos/términos porcentuales, un cambio absoluto/relativo mayor en comparación con los hombres en la categoría de referencia de la variable dicotomizada seleccionada de la medición correspondiente en comparación con la primera. Por lo tanto, este resultado podría considerarse como una brecha de género positiva (es decir, un resultado mejor o favorable a las mujeres) en la medición correspondiente en comparación con la primera. Por el contrario, un valor negativo indica que las mujeres mostraron, en puntos/términos porcentuales, un cambio absoluto/relativo menor en comparación con los hombres en la categoría de referencia de la variable dicotomizada seleccionada. Podría considerarse como una brecha de género negativa (es decir, un resultado peor o desfavorable para las mujeres) en la medición correspondiente en comparación con la primera. Si el intervalo de confianza no incluye el valor 0, puede decirse que la brecha de género correspondiente es estadísticamente significativa",
+		"long_dif": "Porcentaje de la población e intervalos de confianza al 95%, agrupados por la variable de segmentación elegida, que aumenta (mejora), permanece igual o disminuye (deteriora o empeora) entre una medición y la anterior con respecto a la variable diferencia seleccionada.",
+		"long_razon": "Porcentaje de la población e intervalos de confianza, agrupados por la variable de segmentación elegida, que empeora (en una medición determinada respecto a la anterior) en relación con la población que mejora. Un valor positivo significa que hay más personas con resultado de disminución/deterioro/empeoramiento en la variable diferencia seleccionada que de personas con resultado de aumento/mejora.",
+		"long_bre": "Diferencia absoluta/relativa (en puntos/términos porcentuales) e intervalos de confianza, agrupados por la variable de segmentación elegida, entre mujeres y hombres con mejor (aumento), igual o peor (disminución) resultado en una medición respecto a la anterior. Un valor positivo indica que el porcentaje de mujeres que mejoró/aumentó, se mantuvo igual o empeoró/disminuyó su resultado en la variable diferencia seleccionada fue mayor que el porcentaje correspondiente en la población masculina. Un valor negativo indicaría que el porcentaje fue menor en las mujeres."
 	},
 	"segmentaciones": {
 		"edad": "Sexo y Edad",
 		"urb": "Sexo y Urbanización"
 	},
 	"bloques": {
-		"Bloque 1": ["V1", "V2"],
-		"Bloque 2": ["V3", "V4"]
+		"Salud y Bienestar emocional": ["P16"]
 	},
 	"variables": {
-		"V1": {
-			"nombre": "Variable 1",
+		"P16": {
+			"nombre": "Salud general autopercibida",
 			"archivos": {
 				"trans_orig": {
-					"edad": ["trans/ejemplo1", "trans/ejemplo2"],
+					"edad": ["trans/ejemplo2"],
 					"urb": ["trans/ejemplo1"]
+				},
+				"trans_dic": {
+					"edad": ["trans/ejemplo2"]
+				},
+				"trans_camb": {
+					"edad": ["trans/ejemplo2"]
+				},
+				"trans_bre": {
+					"edad": ["trans/ejemplo1"]
 				},
 				"long_dif": {
 					"edad": ["long/ejemplo1"]
-				}
-			}
-		},
-		"V2": {
-			"nombre": "Variable 2",
-			"archivos": {
-				"trans_orig": {
-					"edad": ["trans/ejemplo1", "trans/ejemplo2"],
-					"urb": ["trans/ejemplo1"]
 				},
-				"long_dif": {
+				"long_razon": {
 					"edad": ["long/ejemplo1"]
-				}
-			}
-		},
-		"V3": {
-			"nombre": "Variable 3",
-			"archivos": {
-				"trans_orig": {
-					"edad": ["trans/ejemplo1", "trans/ejemplo2"],
-					"urb": ["trans/ejemplo1"]
 				},
-				"long_dif": {
-					"edad": ["long/ejemplo1"]
-				}
-			}
-		},
-		"V4": {
-			"nombre": "Variable 4",
-			"archivos": {
-				"trans_orig": {
-					"edad": ["trans/ejemplo1", "trans/ejemplo2"],
-					"urb": ["trans/ejemplo1"]
-				},
-				"long_dif": {
+				"long_bre": {
 					"edad": ["long/ejemplo1"]
 				}
 			}
