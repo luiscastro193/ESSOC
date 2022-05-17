@@ -48,7 +48,7 @@
 				},
 				
 				"long_bre": {
-					"edad": ["long/P16_Edad_Long_dif_brecha_Peor", "long/P16_Edad_Long_dif_brecha_Mejor"]
+					"edad": ["long/P16_Edad_Long_dif_brecha_Mejor"]
 					
 				}
 			}
