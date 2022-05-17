@@ -33,26 +33,27 @@
 			"nombre": "Salud general autopercibida",
 			"archivos": {
 				"trans_orig": {
-					"edad": ["trans/ejemplo2"],
-					"urb": ["trans/ejemplo1"]
+					"edad": ["trans/P16_Edad_Trans_orig"]
+					
 				},
 				"trans_dic": {
-					"edad": ["trans/ejemplo2"]
+					"edad": ["trans/P16_EdadTrans_dico"]
 				},
 				"trans_camb": {
-					"edad": ["trans/ejemplo2"]
+					"edad": ["trans/P16_Edad_Trans_cambio"]
 				},
 				"trans_bre": {
 					"edad": ["trans/ejemplo1"]
 				},
 				"long_dif": {
-					"edad": ["long/ejemplo1"]
+					"edad": ["long/P16_Edad_Long_dif"]
 				},
 				"long_razon": {
 					"edad": ["long/ejemplo1"]
 				},
 				"long_bre": {
-					"edad": ["long/ejemplo1"]
+					"edad": ["long/P16_Edad_Long_dif_brecha_Peor"],
+					"edad": ["long/P16_Edad_Long_dif_brecha_Mejor"]
 				}
 			}
 		}
