@@ -42,15 +42,11 @@
 				"trans_camb": {
 					"edad": ["trans/P16_Edad_Trans_cambio"]
 				},
-				"trans_bre": {
-					"edad": ["trans/ejemplo1"]
-				},
+				
 				"long_dif": {
 					"edad": ["long/P16_Edad_Long_dif"]
 				},
-				"long_razon": {
-					"edad": ["long/ejemplo1"]
-				},
+				
 				"long_bre": {
 					"edad": ["long/P16_Edad_Long_dif_brecha_Peor", "long/P16_Edad_Long_dif_brecha_Mejor"]
 					
