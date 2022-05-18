@@ -34,7 +34,6 @@
 			"archivos": {
 				"trans_orig": {
 					"edad": ["trans/P16_Edad_Trans_orig"]
-					
 				},
 				"trans_dic": {
 					"edad": ["trans/P16_EdadTrans_dico"]
@@ -42,14 +41,11 @@
 				"trans_camb": {
 					"edad": ["trans/P16_Edad_Trans_cambio"]
 				},
-				
 				"long_dif": {
 					"edad": ["long/P16_Edad_Long_dif"]
 				},
-				
 				"long_bre": {
 					"edad": ["long/P16_Edad_Long_dif_brecha_Mejor"]
-					
 				}
 			}
 		}
