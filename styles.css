@@ -202,8 +202,8 @@ input:checked + label > h3 {
 }
 
 .distr-link {
-	display: none;
-	/*display: flex;*/
+	/*display: none;*/
+	display: flex;
 	width: 300px;
 	align-items: center;
 	justify-content: space-between;
@@ -270,7 +270,7 @@ input:checked + label > h3 {
 }
 
 .right-side > section:first-child {
-	grid-row: span 2;
+	/*grid-row: span 2;*/
 }
 
 .main-results-header {
