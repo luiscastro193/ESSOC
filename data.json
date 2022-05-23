@@ -33,19 +33,31 @@
 			"nombre": "Salud general autopercibida",
 			"archivos": {
 				"trans_orig": {
-					"edad": ["trans/P16_Edad_Trans_orig"]
+					"edad": ["trans/P16_Edad_Trans_orig"],
+					"urb": ["trans/P16_Grado_Urbanización_Trans_orig"]
 				},
 				"trans_dic": {
-					"edad": ["trans/P16_EdadTrans_dico"]
+					"edad": ["trans/P16_Edad_Trans_dico"],
+					"urb": ["trans/P16_Grado_Urbanización_Trans_dico"]
 				},
 				"trans_camb": {
-					"edad": ["trans/P16_Edad_Trans_cambio"]
+					"edad": ["trans/P16_Edad_Trans_cambio"],
+					"urb": ["trans/P16_Grado_Urbanización_Trans_cambio"]
+				},
+				"trans_bre": {
+					"edad": ["trans/P16_Edad_Trans_camb_Brecha_Género"]
 				},
 				"long_dif": {
-					"edad": ["long/P16_Edad_Long_dif"]
+					"edad": ["long/P16_Edad_Long_dif"],
+					"urb": ["long/P16_Grado_Urbanización_Long_dif"]
+				},
+				"long_razon": {
+					"edad": ["long/P16_Edad_Long_dif_Razon_Emp"],
+					"urb": ["long/P16_Grado_Urbanización_Long_dif_Razon_Emp"]
 				},
 				"long_bre": {
-					"edad": ["long/P16_Edad_Long_dif_brecha_Mejor"]
+					"edad": ["long/P16_Edad_Long_dif_brecha_Positiva"],
+					"urb": ["long/P16_Grado_Urbanización_Long_dif_brecha_Positiva"]
 				}
 			}
 		}
