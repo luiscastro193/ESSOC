@@ -272,11 +272,17 @@ input:checked + label > h3 {
 .main-results-header {
 	display: flex;
 	margin-bottom: 50px;
+	background-color: white;
 }
 
 .main-results-header > .main-header {
 	flex: 1;
 	margin: 0;
+}
+
+.home-link {
+	margin: 50px 0 50px 20px;
+	font-size: 30px;
 }
 
 .downloads {
@@ -289,16 +295,7 @@ input:checked + label > h3 {
 	font-weight: bold;
 	padding: 0 17px 10px;
 	border-radius: 10px 0 0 10px;
-	position: relative;
 	align-items: center;
-}
-
-.downloads::after {
-	content: "";
-	position: absolute;
-	top: 0; right: 0; bottom: 0; left: 0;
-	background-color: white;
-	z-index: -100;
 }
 
 .downloads > span:first-child {
