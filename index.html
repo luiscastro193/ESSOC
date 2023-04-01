@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>ESSOC</title>
+	<title>ESSA</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<link rel="icon" href="favicon.jpg">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
 			</div>
 			<form id="var-selection" class="selection-form"></form>
 		</section>
-		<div class="right-side">
+		<div class="main-column">
 			<section class="selection-block">
 				<div class="selection-header">
 					<input id="est-info-checkbox" type="checkbox">
@@ -47,6 +47,11 @@
 				</div>
 				<form id="est-selection" class="selection-form"></form>
 			</section>
+			<a class="distr-link" href="#/evolution" target="_blank"><span>Ver descripción de las mediciones</span><span><i class="fa-solid fa-circle-info"></i></span></a>
+			<a class="distr-link" href="data/Muestras.zip" download><span>Descargar distribución de la muestra</span><span><i class="fa-solid fa-circle-info"></i></span></a>
+			<button class="main-button" disabled>Visualizar</button>
+		</div>
+		<div class="main-column">
 			<section class="selection-block">
 				<div class="selection-header">
 					<input id="seg-info-checkbox" type="checkbox">
@@ -55,9 +60,14 @@
 				</div>
 				<form id="seg-selection" class="selection-form"></form>
 			</section>
-			<a class="distr-link" href="#/evolution" target="_blank"><span>Ver descripción de las mediciones</span><span><i class="fa-solid fa-circle-info"></i></span></a>
-			<button class="main-button" disabled>Visualizar</button>
-			<a class="distr-link" href="data/Muestras.zip" download><span>Descargar distribución de la muestra</span><span><i class="fa-solid fa-circle-info"></i></span></a>
+			<section class="selection-block">
+				<div class="selection-header">
+					<input id="m-info-checkbox" type="checkbox">
+					<label for="m-info-checkbox"><h3><span>Seleccione las mediciones</span><span><i class="fa-solid fa-circle-info"></i></span></h3></label>
+					<p class="selection-info">Se pueden mostrar los resultados para todas las mediciones disponibles o para una selección concreta.</p>
+				</div>
+				<form id="m-selection" class="selection-form"></form>
+			</section>
 		</div>
 	</main>
 </body>
